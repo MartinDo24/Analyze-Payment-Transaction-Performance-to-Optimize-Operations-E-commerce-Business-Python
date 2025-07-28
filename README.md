@@ -88,7 +88,7 @@ Tabble 2: Df_transactions
 
 2️⃣ Data Wrangling & Python Analyst
 
-Task 1: Top 3 product_ids with the highest volume.
+## Task 1: Top 3 product_ids with the highest volume.
 
 -Group data by Product_id and sum the weight using groupby() and sum() methods.
 
@@ -98,7 +98,7 @@ Task 1: Top 3 product_ids with the highest volume.
 
 <img width="204" height="166" alt="image" src="https://github.com/user-attachments/assets/c06288d9-e78f-49ed-8f30-9482fd15d870" />
 
-Task 2: Given that 1 product_id is only owed by 1 team, are there any abnormal products against this rule?
+## Task 2: Given that 1 product_id is only owed by 1 team, are there any abnormal products against this rule?
 
 -Initialize Tracking: abnormal_products list stores violating product_ids.
 
@@ -110,7 +110,7 @@ Task 2: Given that 1 product_id is only owed by 1 team, are there any abnormal p
 
 <img width="581" height="32" alt="image" src="https://github.com/user-attachments/assets/86029000-bb14-4ded-aabf-e07dd6b77567" />
 
-Task 3: Find the team has had the lowest performance (lowest volume) since Q2.2023. Find the category that contributes the least to that team.
+## Task 3: Find the team has had the lowest performance (lowest volume) since Q2.2023. Find the category that contributes the least to that team.
 
 -Filter Data for Q2 2023: df['report_month'] >= '2023-04' isolates records from April 2023 onward (Q2 starts in April).
 
@@ -122,7 +122,7 @@ Task 3: Find the team has had the lowest performance (lowest volume) since Q2.20
 
 <img width="433" height="47" alt="image" src="https://github.com/user-attachments/assets/0432eb6f-0f37-4845-9ea5-98d00644f6c4" />
 
-Task 4: Find the contribution of source_ids of refund transactions (payment_group = ‘refund’), what is the source_id with the highest contribution?
+## Task 4: Find the contribution of source_ids of refund transactions (payment_group = ‘refund’), what is the source_id with the highest contribution?
 
 -Filter Refund Transactions: df[df['payment_group'] == 'refund'] isolates refund records.
 
@@ -134,13 +134,20 @@ Task 4: Find the contribution of source_ids of refund transactions (payment_grou
 
 <img width="414" height="59" alt="image" src="https://github.com/user-attachments/assets/10f15a4c-3db7-4002-b580-59c1e976b4ca" />
 
-Task 5: Define type of transactions (‘transaction_type’) for each row, given:
+## Task 5: Define type of transactions (‘transaction_type’) for each row, given:
+
 + transType = 2 & merchant_id = 1205: Bank Transfer Transaction
+
 + transType = 2 & merchant_id = 2260: Withdraw Money Transaction
+
 + transType = 2 & merchant_id = 2270: Top Up Money Transaction
+
 + transType = 2 & others merchant_id: Payment Transaction
+
 + transType = 8, merchant_id = 2250: Transfer Money Transaction
+
 + transType = 8 & others merchant_id: Split Bill Transaction
+
 + Remained cases are invalid transactions
 
 -Rule-Based Classification:
@@ -169,7 +176,7 @@ All other transType values: Marked as "Invalid Transaction"
 
 <img width="1054" height="203" alt="image" src="https://github.com/user-attachments/assets/aa453d9b-4914-4b4b-8d52-7bae70a97aa7" />
 
-Task 6: Of each transaction type (excluding invalid transactions): find the number of transactions, volume, senders and receivers.
+## Task 6: Of each transaction type (excluding invalid transactions): find the number of transactions, volume, senders and receivers.
 
 -Filter Valid Transactions: Excludes rows where transaction_type = 'Invalid Transaction'.
 
