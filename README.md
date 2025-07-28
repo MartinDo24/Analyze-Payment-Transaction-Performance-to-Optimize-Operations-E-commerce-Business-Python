@@ -37,9 +37,11 @@ Tools Used: Python (google colab)
 
 ## 📂 Dataset Description & Data Structure
 
--Source: payment_report.csv, product.csv, transactions.csv
+-Source: Source.ip
 
 -Size: 3 Tables ~ 500K rows
+
+-Format: payment_report.csv, product.csv, transactions.csv
 
 ### 📊 Data Structure & Relationships
 
