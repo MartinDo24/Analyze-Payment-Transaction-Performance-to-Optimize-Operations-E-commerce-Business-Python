@@ -116,7 +116,7 @@ Tabble 2: Df_transactions
 
 ## Task 2: Given that 1 product_id is only owed by 1 team, are there any abnormal products against this rule?
 
-- Goal: Identify if there are any products that violate the rule where each product_id is only owned by one team
+-Goal: Identify if there are any products that violate the rule where each product_id is only owned by one team
 
 -Approach
 
@@ -134,9 +134,9 @@ Tabble 2: Df_transactions
 
 ## Task 3: Find the team has had the lowest performance (lowest volume) since Q2.2023. Find the category that contributes the least to that team.
 
-- Goal: Identify the lowest performing business groups from Q2 2023 and find the product portfolio that contributed least to that performance, to support strategic management of improvements or renewable energy sources.
+-Goal: Identify the lowest performing business groups from Q2 2023 and find the product portfolio that contributed least to that performance, to support strategic management of improvements or renewable energy sources.
 
-- Approach:
+-Approach:
 
 + Filter Data for Q2 2023: df['report_month'] >= '2023-04' isolates records from April 2023 onward (Q2 starts in April).
 
@@ -152,9 +152,9 @@ Tabble 2: Df_transactions
 
 ## Task 4: Find the contribution of source_ids of refund transactions (payment_group = ‘refund’), what is the source_id with the highest contribution?
 
-- Goal :Determine which refund source (identified by source_id) contributes the most to the total refund amount, so that the business can prioritize investigation into its causes and implement targeted strategies to reduce refund losses.
+-Goal :Determine which refund source (identified by source_id) contributes the most to the total refund amount, so that the business can prioritize investigation into its causes and implement targeted strategies to reduce refund losses.
 
-- Approach:
+-Approach:
 
 + Filter Refund Transactions: df[df['payment_group'] == 'refund'] isolates refund records.
 
@@ -184,7 +184,7 @@ Tabble 2: Df_transactions
 
 + Remained cases are invalid transactions
 
-- Goal:
+-Goal:
 
   Classify all corporate e-wallet transactions by type (Bank Transfer, Withdrawal, Deposit, Payment, Transfer, Bill Split, Invalid) to:
 + Support the operations department to accurately track each type of transaction.
@@ -193,7 +193,7 @@ Tabble 2: Df_transactions
 
 + Provide input data for performance analysis by transaction type, thereby optimizing resources and business strategies
 
-- Approach:
+-Approach:
 
 + Rule-Based Classification:
 
@@ -225,7 +225,8 @@ Validation :Df_transactions.head() previews the results for verification
 
 ## Task 6: Of each transaction type (excluding invalid transactions): find the number of transactions, volume, senders and receivers.
 
-- Goal:
+-Goal:
+
 Determine the performance and popularity of each valid transaction type (excluding invalid transactions) to:
 
 + Evaluate which transaction types account for a large proportion in terms of quantity and value
